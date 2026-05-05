@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Artemis | Retorno à Lua</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3a 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px solid #ff8c00;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin: 0 auto 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ff8c00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .mission-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        .mission-info h2 {
+            color: #ff8c00;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .mission-info p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .mission-stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff8c00;
+        }
+
+        .gallery {
+            margin-top: 50px;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            color: #ff8c00;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .gallery-card p {
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .mission-info p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Artemis_program_%282018%29.svg/1200px-Artemis_program_%282018%29.svg.png" alt="Logo Missão Artemis">
+        </div>
+        <h1>MISSÃO ARTEMIS</h1>
+        <div class="subtitle">O retorno da humanidade à Lua</div>
+    </header>
+
+    <div class="container">
+        <div class="mission-info">
+            <h2>🌕 Sobre a Missão Artemis</h2>
+            <p>A Missão Artemis é um programa espacial liderado pela NASA em colaboração com agências espaciais internacionais, incluindo a ESA (Europa), JAXA (Japão) e CSA (Canadá). O objetivo principal é levar a primeira mulher e o primeiro homem negro à superfície lunar até 2025, estabelecendo uma presença sustentável na Lua.</p>
+            
+            <p>Diferente do programa Apollo, que teve missões curtas na Lua, a Artemis visa criar o Artemis Base Camp - uma base lunar permanente na região do Polo Sul, onde há água em forma de gelo nas crateras permanentemente sombreadas. Essa base servirá como trampolim para futuras missões tripuladas a Marte.</p>
+            
+            <p>A missão utiliza o foguete mais poderoso já construído, o Space Launch System (SLS), e a espaçonave Orion. Além disso, a Gateway (uma estação espacial em órbita lunar) servirá como ponto de apoio para as missões.</p>
+
+            <div class="mission-stats">
+                <div class="stat-card">
+                    <div class="stat-number">2025</div>
+                    <div>Retorno Tripulado</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1ª</div>
+                    <div>Mulher na Lua</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98m</div>
+                    <div>Altura SLS</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div>Astronautas</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <h2>🚀 Galeria da Missão Artemis</h2>
+            <div class="gallery-grid">
+                <!-- 1ª imagem: Estação Lunar Gateway / Legenda: Foguete SLS -->
+                <div class="gallery-card">
+                    <img src="{{ url_for('static', filename='images/images.jfif') }}" alt="Estação Lunar Gateway">
+                    <p>Foguete SLS no lançamento</p>
+                </div>
+                
+                <!-- 2ª imagem: Foguete SLS / Legenda: Cápsula Orion -->
+                <div class="gallery-card">
+                    <img src="{{ url_for('static', filename='images/i286137.jpeg') }}" alt="Foguete SLS">
+                    <p>Cápsula Orion no espaço</p>
+                </div>
+                
+                <!-- 3ª imagem: Cápsula Orion / Legenda: Estação Lunar Gateway -->
+                <div class="gallery-card">
+                    <img src="{{ url_for('static', filename='images/i335666.jpeg') }}" alt="Cápsula Orion">
+                    <p>Estação Lunar Gateway</p>
+                </div>
+                
+                <!-- 4º - Astronautas na Lua -->
+                <div class="gallery-card">
+                    <img src="https://s2-oglobo.glbimg.com/49yUdxyCKI4ek5-hgLCf_k2u0L8=/0x0:985x985/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/O/k/TJunOjQzSgXpcFV8GQUQ/jsc2023e016432-alt4.jpg" alt="Astronautas na Lua">
+                    <p>Astronautas explorando a Lua</p>
+                </div>
+                
+                <!-- 5º - Base Lunar -->
+                <div class="gallery-card">
+                    <img src="https://img.odcdn.com.br/wp-content/uploads/2022/07/possivel-base-lunar.jpg" alt="Base Lunar">
+                    <p>Conceito da Base Artemis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Missão Artemis - Programa de Exploração Lunar da NASA</p>
+        <p>Desenvolvido para o desafio SENAI | Git + Azure + Flask</p>
+    </footer>
+</body>
+</html>
